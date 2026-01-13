@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>EchoSpend - AI Voice Money Expense Tracking App</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#10b981",
+                        "primary-soft": "#34d399",
+                        "primary-light": "#d1fae5",
+                        "danger": "#ef4444",
+                        "background": "#ffffff",
+                        "surface": "#f8fafc",
+                        "text-main": "#111827",
+                        "text-sub": "#6b7280",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'float': '0 10px 30px -5px rgba(0, 0, 0, 0.08)',
+                        'glow': '0 0 20px -5px rgba(16, 185, 129, 0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            overscroll-behavior-y: none;
+            -webkit-tap-highlight-color: transparent;
+            background-color: #f1f5f9;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.33);
+                opacity: 1;
+            }
+
+            80%,
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+
+        .recording-pulse {
+            animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.48.1"
+  }
+}
+</script>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="font-sans antialiased text-text-main">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

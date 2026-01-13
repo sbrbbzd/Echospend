@@ -1,0 +1,7 @@
+{
+  "name": "EchoSpend",
+  "description": "An AI-powered iOS-style expense tracker that allows you to log spending via voice or chat.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
